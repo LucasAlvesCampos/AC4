@@ -1,0 +1,19 @@
+body{
+    background: #ecedee;
+}
+
+ul{
+    color: white;    
+}
+
+#fundo {
+    background-image: url(/static/fundo.jpg);
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat:no-repeat ;
+    text-align: center;    
+}
+
+.texto {
+    padding: 3em;
+}
