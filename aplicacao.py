@@ -18,4 +18,4 @@ def jogosdarodada():
 def times():
     return render_template('times.html')
 
-app.run(debug=True)
+app.run()
