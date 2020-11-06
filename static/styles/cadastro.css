@@ -14,6 +14,14 @@ body {
     background-image: url(/static/fundo.jpg);
     background-attachment: fixed; 
     background-size: cover; 
-    background-repeat:no-repeat ; 
+    background-repeat:no-repeat;     
+}
+
+#voltar {
     
+    color:white;
+}
+
+h2 {
+    text-align: center;
 }
