@@ -4,11 +4,11 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:mysqlroot@localhost/cadastrotime'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:mysqlroot@localhost/ac5'
 db = SQLAlchemy(app)
 
 class Cadastrotime(db.Model):
-    __tablename__ = "contatotimes"
+    __tablename__ = "tabelatimes"
     _id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nome = db.Column(db.String(50))
     ano = db.Column(db.String(9))
@@ -22,7 +22,7 @@ class Cadastrotime(db.Model):
         self.classtemporada = classtemporada
 
 class Cadastropartidas(db.Model):
-    __tablename__ = "partidas"
+    __tablename__ = "tabelapartidas"
     _id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     casa = db.Column(db.String(50))
     visitante = db.Column(db.String(50))
